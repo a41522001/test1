@@ -14,3 +14,16 @@ p {
   width: 350px;
   height: 300px;
 }
+
+.action {
+  width: 100px;
+  height: 80px;
+  font-size: x-large;
+  font-weight: 800;
+  background-color: peachpuff;
+}
+
+.action > a {
+  color: slateblue;
+  text-decoration: none;
+}
