@@ -3,9 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>TRY TRY JS</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
+    <form>
+      <h2 class="form-title">忘東忘西の備忘錄</h2>
+      <fieldset>
+        <legend class="content-title content-title-style">提醒事項</legend>
+        <label for="memo">Note</label>
+        <input type="text" id="memo" name="memo" placeholder="記東記西" />
+        <label for="date">Date</label>
+        <input type="date" id="date" name="Date" />
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time" />
+        <label for="file">File</label>
+        <input type="file" id="file" name="file" />
+        <div>
+          <h3 class="content-title content-title-style">-Status-</h3>
+          <label for="100%">Completed</label>
+          <input type="radio" id="100%" name="status" value="100%" />
+          <label for="50%">Under Tracking</label>
+          <input type="radio" id="50%" name="status" value="50%" />
+          <label for="0%">Pending</label>
+          <input type="radio" id="0%" name="status" value="0%" />
+          <div>
+            <label for="range">Other:</label>
+            <input type="range" id="range" name="status" />
+          </div>
+        </div>
+      </fieldset>
+      <button id="add" class="dark-btn" type="button">Add</button>
+      <button id="delete" class="dark-btn" type="button">Delete</button>
+    </form>
+    <div id="list"></div>
+
     <script src="./index.js"></script>
   </body>
 </html>
